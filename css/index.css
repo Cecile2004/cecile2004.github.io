@@ -1,3 +1,8 @@
+@media (min-width: 34em) {
+  .side-card {
+    opacity: 0.9;
+  }
+}
 .page pre,
 .page .highlight {
   overflow: auto;
