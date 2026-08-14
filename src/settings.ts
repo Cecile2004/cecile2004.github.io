@@ -1,7 +1,7 @@
 export const profile = {
 	fullName: 'Xinyuan LIANG',
-	title: 'Student',
-	institute: 'PolyU',
+	title: 'MSc Student at PolyU | ESG & Sustainability',
+	institute: '',
 	author_name: 'Xinyuan Liang',
 	bio: 'Bonjour!! You can also call me Cécile (pronounced "say-SEEL") or just CC. Right now, I am taking some time to recharge before packing my bags for Hong Kong and beginning a whole new journey.',
 	research_areas: [
@@ -12,7 +12,7 @@ export const profile = {
 // Set equal to an empty string to hide the icon that you do not want to display.
 export const social = {
 	email: 'liangxinyuan_lxy@126.com',
-	linkedin: 'https://linkedin.com/in/昕媛-梁-2112b6326',
+	linkedin: 'https://www.linkedin.com/in/cecile-liang',
 	instagram: 'https://instagram.com/liangxinyuan17',
 	x: 'https://x.com/lingxnyun399202',
 	bluesky: '',
