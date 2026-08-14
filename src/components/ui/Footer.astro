@@ -1,0 +1,24 @@
+---
+import { profile } from '../../settings'
+
+const { fullName } = profile
+---
+
+<footer class='footer footer-center bg-base-100 text-base-content px-4 py-8 text-gray-400'>
+	<aside>
+		<p>
+			&copy; {new Date().getFullYear()} - All rights reserved by {fullName}
+		</p>
+		<p>
+			Powered by <a
+				href='https://astro.build/'
+				class='font-bold'
+				target='_blank'>Astro</a
+			> & <a
+				href='https://github.com/maiobarbero/astro_academia'
+				class='font-bold'
+				target='_blank'>Academia Theme</a
+			>
+		</p>
+	</aside>
+</footer>
