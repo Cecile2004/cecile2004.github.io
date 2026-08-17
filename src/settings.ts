@@ -3,7 +3,8 @@ export const profile = {
 	title: 'MSc Student at PolyU | ESG & Sustainability',
 	institute: '',
 	author_name: 'Xinyuan Liang',
-	bio: 'Bonjour!! You can also call me Cécile (pronounced "say-SEEL") or just CC. Right now, I am taking some time to recharge before packing my bags for Hong Kong and beginning a whole new journey.',
+	bio: '',
+	welcome: 'You can also call me Cécile or just CC.',
 	research_areas: [
 
 	],
