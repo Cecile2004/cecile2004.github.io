@@ -2,12 +2,12 @@ const serifFontStack = [
     // "Times New Roman",
     "Source Han Serif SC",
     "Source Han Serif CN",
+    "Times New Roman",
     "Noto Serif CJK SC",
     "Noto Serif SC",
     "Songti SC",
     "STSong",
     "SimSun",
-    "Times New Roman",
     "serif",
 ];
 

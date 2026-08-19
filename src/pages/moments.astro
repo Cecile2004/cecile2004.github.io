@@ -1,19 +1,48 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import { getEntry, render } from 'astro:content'
-
-const moments = await getEntry('blog', 'moments')
-if (!moments) {
-	throw new Error('Missing Moments content')
-}
-
-const { Content } = await render(moments)
 ---
 
-<Layout title='Moments' description={moments.data.excerpt}>
+<Layout title='Moments' description='A personal gallery of travel and life moments from Hong Kong, Shanghai, Ulanqab, Harbin, Changbai Mountains, Dalian, Wudalianchi, Qingdao, and Weihan.'>
 	<section class='legacy-page'>
 		<article class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'>
-			<Content />
+			<h1>Moments</h1>
+			<div class='gallery-masonry'>
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161659828.jpg-slim' alt='May 2025 - Hong Kong' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161657519.jpg-slim' alt='Dec 2024 - Shanghai' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161700813.jpg-slim' alt='Oct 2024 - Ulanqab' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161701157.jpg-slim' alt='Sep 2024 - Harbin' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161658588.jpg-slim' alt='Jul 2024 - Changbai Mountains' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161659134.jpg-slim' alt='May 2024 - Dalian' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161657681.jpg-slim' alt='Apr 2024 - Wudalianchi' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161659441.jpg-slim' alt='Oct 2023 - Qingdao' />
+				</div>
+
+				<div class='gallery-item'>
+					<img src='https://image.marshuni.fun/liangxinyuan/202509161700018.jpg-slim' alt='Oct 2023 - Weihan' />
+				</div>
+			</div>
 		</article>
 	</section>
 </Layout>

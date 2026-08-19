@@ -75,32 +75,16 @@ export const settings = {
 
 To customize your website settings, modify the `settings.ts` file with your desired values. These settings will be used throughout your website to display the appropriate information.
 
-## Where to Find the Blog Collection and Where to Add New Blog Posts
+## Where to Edit Page Content
 
-The blog collection is located in the `src/content/BlogPosts/` directory. Each blog post is a Markdown file with a `.md` extension. The blog posts are named sequentially (e.g., `post1.md`, `post2.md`, etc.).
+Page content is maintained directly in the Astro files under `src/pages/`:
 
-### Adding a New Blog Post
+- `src/pages/index.astro` - About Me
+- `src/pages/experience.astro` - Professional Experience
+- `src/pages/moments.astro` - Moments
+- `src/pages/cv.astro` - CV
 
-1. Navigate to the `src/content/BlogPosts/` directory.
-2. Create a new Markdown file for your blog post (e.g., `post1.md`).
-3. Add the content of your blog post using Markdown syntax. Include frontmatter at the top of the file to define metadata such as title, date, and tags.
-
-### Example Blog Post (`post11.md`)
-
-```markdown
----
-title: "New Blog Post"
-date: "2023-10-01"
-tags: ["research", "astro"]
-excerpt: "Some short paragraphs"
----
-
-# New Blog Post
-
-This is the content of the new blog post. Write your article here using Markdown syntax.
-```
-
-Once you have added the new blog post, it will be automatically included in the blog collection and displayed on the blog page of your website.
+Edit these files directly; there are no separate Markdown content collections.
 
 ## Deploy
 The template provides a workflow to deploy the website on Github pages as a static website.

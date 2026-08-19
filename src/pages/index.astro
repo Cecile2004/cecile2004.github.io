@@ -1,17 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
-import { getEntry, render } from 'astro:content'
 import { seo } from '@/settings'
 import ProfilePictures from '@/assets/profile.jpg'
 import Hero from '@/components/ui/Hero.astro'
-
-const about = await getEntry('blog', 'about-me')
-if (!about) {
-	throw new Error('Missing About me content')
-}
-
-const { Content } = await render(about)
 ---
 
 <Layout title={seo.default_title} description={seo.default_description}>
@@ -21,7 +13,51 @@ const { Content } = await render(about)
 
 	<section class='legacy-page py-12'>
 		<article class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'>
-			<Content />
+			<p>
+				MSc <strong>Environmental Management and Engineering</strong> student at The Hong Kong Polytechnic University, with an academic background in <strong>Hydrology and Water Resources Engineering</strong>.
+			</p>
+			<p>
+				Experienced in <strong>ESG consulting, sustainability reporting, and environmental research</strong>, with practical knowledge of ESG frameworks, environmental data analysis, and sustainability practices.
+			</p>
+			<p>
+				Combining <strong>engineering expertise</strong> with strong <strong>analytical and communication skills</strong>, committed to advancing corporate sustainability and environmental protection.
+			</p>
+
+			<h3>Education</h3>
+			<div class='education-list'>
+				<div class='edu-item'>
+					<img class='edu-logo' src='/img/polyu-logo.jpg' alt='PolyU Logo' />
+					<div class='edu-info'>
+						<strong>The Hong Kong Polytechnic University</strong>
+						<em>M.Sc. in Environmental Management & Engineering (2026 - present)</em>
+					</div>
+				</div>
+
+				<div class='edu-item'>
+					<img class='edu-logo' src='/img/heilongjiang-logo.jpg' alt='Heilongjiang University Logo' />
+					<div class='edu-info'>
+						<strong>Heilongjiang University</strong>
+						<em>B.Eng. in Hydrology & Water Resources Engineering (2022 - 2026)</em>
+					</div>
+				</div>
+			</div>
+
+			<h3>Certifications</h3>
+			<div class='cert-item'>
+				<strong>LEED Green Associate</strong>
+				<em>U.S. Green Building Council</em>
+			</div>
+			<div class='cert-item'>
+				<strong>DELF B2 (Diplôme in French Language Studies)</strong>
+				<em>Ministère de l'Éducation nationale, France</em>
+			</div>
+
+			<h3>Publications</h3>
+			<ul>
+				<li>
+					Xiao, Ruihan, Xinyuan Liang, and Beixing Duan. <em>Understory Vegetation Regulated the Soil Stoichiometry in Cold-Temperate Larch Forests.</em> <strong>Plants 14.7 (2025): 1088.</strong>
+				</li>
+			</ul>
 		</article>
 	</section>
 </Layout>
