@@ -11,17 +11,28 @@ import Hero from '@/components/ui/Hero.astro'
 		<Hero profilePicture={ProfilePictures} />
 	</section>
 
-	<section class='legacy-page py-12'>
+	<section class='legacy-page py-4'>
 		<article class='prose max-w-none prose-headings:text-base-content prose-p:text-base-content/80'>
-			<p>
-				MSc <strong>Environmental Management and Engineering</strong> student at The Hong Kong Polytechnic University, with an academic background in <strong>Hydrology and Water Resources Engineering</strong>.
-			</p>
-			<p>
-				Experienced in <strong>ESG consulting, sustainability reporting, and environmental research</strong>, with practical knowledge of ESG frameworks, environmental data analysis, and sustainability practices.
-			</p>
-			<p>
-				Combining <strong>engineering expertise</strong> with strong <strong>analytical and communication skills</strong>, committed to advancing corporate sustainability and environmental protection.
-			</p>
+			<div class='not-prose my-6 flex flex-col items-center gap-5'>
+				<div class='relative w-[85%] max-w-3xl rounded-2xl border border-base-content/10 bg-base-100 py-6 pl-6 pr-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg sm:pl-24'>
+					<i class='fa-solid fa-graduation-cap pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl leading-none text-base-content/10 sm:left-4 sm:translate-x-0 sm:text-5xl sm:text-neutral/70' aria-hidden='true'></i>
+					<p class='relative z-10 m-0 text-base-content/80'>
+						MSc <strong>Environmental Management and Engineering</strong> student at The Hong Kong Polytechnic University, with an academic background in <strong>Hydrology and Water Resources Engineering</strong>.
+					</p>
+				</div>
+				<div class='relative w-[85%] max-w-3xl rounded-2xl border border-base-content/10 bg-base-100 py-6 pl-6 pr-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg sm:pl-24'>
+					<i class='fa-solid fa-chart-line pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl leading-none text-base-content/10 sm:left-4 sm:translate-x-0 sm:text-5xl sm:text-neutral/70' aria-hidden='true'></i>
+					<p class='relative z-10 m-0 text-base-content/80'>
+						Experienced in <strong>ESG consulting, sustainability reporting, and environmental research</strong>, with practical knowledge of ESG frameworks, environmental data analysis, and sustainability practices.
+					</p>
+				</div>
+				<div class='relative w-[85%] max-w-3xl rounded-2xl border border-base-content/10 bg-base-100 py-6 pl-6 pr-6 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:shadow-lg sm:pl-24'>
+					<i class='fa-solid fa-gears pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl leading-none text-base-content/10 sm:left-4 sm:translate-x-0 sm:text-5xl sm:text-neutral/70' aria-hidden='true'></i>
+					<p class='relative z-10 m-0 text-base-content/80'>
+						Combining <strong>engineering expertise</strong> with strong <strong>analytical and communication skills</strong>, committed to advancing corporate sustainability and environmental protection.
+					</p>
+				</div>
+			</div>
 
 			<h3>Education</h3>
 			<div class='education-list'>
