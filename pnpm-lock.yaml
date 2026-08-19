@@ -20,6 +20,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.4
         version: 5.1.5(astro@5.18.2(@types/node@24.13.3)(jiti@1.21.7)(rollup@4.62.4)(typescript@5.0.2)(yaml@2.9.0))(tailwindcss@3.4.19(yaml@2.9.0))
+      '@fortawesome/fontawesome-free':
+        specifier: ^7.3.1
+        version: 7.3.1
       '@types/react':
         specifier: ^19.0.7
         version: 19.2.18
@@ -491,6 +494,10 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fortawesome/fontawesome-free@7.3.1':
+    resolution: {integrity: sha512-wmglKKPDIkgV3aWlZzWECCPoGIkYCulzBwxG9+w7rc5BGapZ6cPMpoPOT8k36J0Ni7PPX6c/rsoMWfS4d1MUMg==}
+    engines: {node: '>=6'}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -2186,6 +2193,7 @@ packages:
   tsconfck@3.1.6:
     resolution: {integrity: sha512-ks6Vjr/jEw0P1gmOVwutM3B7fWxoWBL2KRDb1JfqGVawBmO5UsvmWOQFGHBPl5yxYz4eERr19E6L7NMv+Fej4w==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -2819,6 +2827,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.7':
     optional: true
+
+  '@fortawesome/fontawesome-free@7.3.1': {}
 
   '@img/colour@1.1.0': {}
 
